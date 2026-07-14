@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: urirun-connector-cron
+Version: 0.1.0
+Summary: Manage cron entries + a calendar of upcoming runs + export schedules to iCalendar/Google (cron://).
+Author: Tom Sapletta
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: urirun-connector-calendar
+Requires-Dist: urirun>=0.4.14
+
+# urirun-connector-cron
+
+`cron://` — manage cron entries, a calendar of upcoming runs, and export schedules to
+iCalendar (`.ics`) / Google CSV for import on any platform. Only lines tagged
+`# urirun:<id>` are touched; the rest of your crontab is preserved.

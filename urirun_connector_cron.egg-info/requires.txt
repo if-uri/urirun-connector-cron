@@ -1,0 +1,2 @@
+urirun-connector-calendar
+urirun>=0.4.14

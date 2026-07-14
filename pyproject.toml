@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urirun-connector-cron"
+version = "0.1.0"
+description = "Manage cron entries + a calendar of upcoming runs + export schedules to iCalendar/Google (cron://)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Tom Sapletta" }]
+dependencies = [
+    "urirun-connector-calendar","urirun>=0.4.14"]
+
+[project.entry-points."urirun.bindings"]
+cron = "urirun_connector_cron.core:urirun_bindings"
+
+[tool.setuptools.packages.find]
+include = ["urirun_connector_cron*"]

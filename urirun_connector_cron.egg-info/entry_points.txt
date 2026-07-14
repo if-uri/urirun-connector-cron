@@ -1,0 +1,2 @@
+[urirun.bindings]
+cron = urirun_connector_cron.core:urirun_bindings
